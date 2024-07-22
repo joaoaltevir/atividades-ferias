@@ -24,6 +24,8 @@ function adicionar(ATIVIDADES) {
   }
   return;
 }
+
+
 function teste_dia(dia, atividades) {
   for (let i = 0; i < atividades.length; i++) {
     if (dia == atividades[i].Dia) {
@@ -32,6 +34,8 @@ function teste_dia(dia, atividades) {
   }
   return 100;
 }
+
+
 function listar(atividades) {
   for (let i = 0; i < atividades.length; i++) {
     console.log("--------------------------------");
@@ -40,10 +44,14 @@ function listar(atividades) {
     console.log("Atividades: ", atividades[i].Atividade);
   }
 }
+
+
 const alterarDia = (atividades, i) => {
   atividades[i].Dia = prompt("Informe o dia correto: ");
   return;
 };
+
+
 const alterarAtividade = (atividades, i) => {
   tamanhoArray = atividades[i].Atividade.length;
   atividades[i].Atividade.splice(0, tamanhoArray);
@@ -51,10 +59,14 @@ const alterarAtividade = (atividades, i) => {
     "Informe o que você fez nesse dia corretamente: "
   );
 };
+
+
 const apagar = function (indice, atividades) {
   atividades.splice(indice, 1);
   console.log("Apago com sucesso!");
 };
+
+
 const alterar = (atividades) => {
   let resposta = +prompt("Informe o indice que deseja alterar: ");
   console.log(atividades[resposta].Dia);

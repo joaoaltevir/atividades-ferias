@@ -1,10 +1,11 @@
 //variaveis e importações:
 const prompt = require("prompt-sync")();
 const funcao = require("./atividades");
+
 let opcao = 0;
+
 const ATIVIDADES = [];
 
-//1 parte: C (criar)
 
 while (opcao != 5) {
   funcao.menu();
