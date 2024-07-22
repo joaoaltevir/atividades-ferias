@@ -1,6 +1,6 @@
 //variaveis e importações:
 const prompt = require("prompt-sync")();
-const funcao = require("./function");
+const funcao = require("./atividades");
 let opcao = 0;
 const ATIVIDADES = []
 
@@ -12,7 +12,9 @@ while(opcao != 5){
     opcao = +prompt("Digite aqui: ")
     if(opcao == 1){
         funcao.adicionar(ATIVIDADES);
-    }else if(opcao == 3){
+    }else if(opcao == 2){
+
+    } else if(opcao == 3){
         funcao.listar(ATIVIDADES)
     }
 }
