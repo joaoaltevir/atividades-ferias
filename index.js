@@ -13,7 +13,7 @@ while(opcao != 5){
     if(opcao == 1){
         funcao.adicionar(ATIVIDADES);
     }else if(opcao == 3){
-        funcao.listar
+        funcao.listar(ATIVIDADES)
     }
 }
 

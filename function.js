@@ -32,11 +32,18 @@ function teste_dia(dia, atividades){
     }
     return 100
 }
+function listar(atividades){
+    for(let i = 0; i < atividades.length;i++){
+        console.log("Dia: ",atividades[i].Dia);
+        console.log("Atividades: ", atividades[i].Atividade);
+    }
+}
 
 
 
 module.exports = {
     menu,
     adicionar,
+    listar,
 
 }
